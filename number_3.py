@@ -8,10 +8,7 @@ def count_letters(text):
         if bukva.isalpha():
             global count
             count += 1
-            if (bukva in bukvi_chisla):
-                bukvi_chisla[bukva] += 1
-            else:
-                bukvi_chisla[bukva] = 1
+            bukvi_chisla[bukva] = bukvi_chisla.get(bukva, 0) + 1
     return bukvi_chisla
 
 
