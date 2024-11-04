@@ -7,7 +7,7 @@ def find_common_participants(participants_first_group, participants_second_group
     for person in participants_first_group_r:
         if (person in participants_second_group_r):
             common.append(person)
-    common = sorted(common)
+    common = common.sort()
     return common
 
 
